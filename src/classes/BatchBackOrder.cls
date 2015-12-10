@@ -1,7 +1,7 @@
 global with sharing class BatchBackOrder implements Database.Batchable<sObject>, Database.Stateful {
 	//Map<Id,SalesHeader__c> mapidSale = new Map<Id,SalesHeader__c>();
 	Set<Id> setid = new Set<Id>();
-	
+	Set<Id> setid1 = new Set<Id>();
 	public BatchBackOrder(Map<Id,SalesHeader__c> mapidSale){
 		setid = mapidSale.keyset();				
 	}
